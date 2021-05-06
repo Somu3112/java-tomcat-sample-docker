@@ -1,5 +1,8 @@
 pipeline {
     agent any
+	environment {
+    		PATH = "/Users/nileshkumarshegokar/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/auto/bin:$PATH"
+  	}
     stages {
         stage('Build Application') {
             steps {
